@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Graph</class>
+ <widget class="QWidget" name="Graph">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>872</width>
+    <height>581</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+background-color : rgb(254, 248, 245);
+
+}</string>
+  </property>
+  <widget class="QCustomPlot" name="Widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>831</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCustomPlot {
+	font: 28pt &quot;.AppleSystemUIFont&quot;;
+  qproperty-alignment: 'AlignVCenter | AlignRight';
+  border: 1px solid rgb(254, 248, 245);
+color: rgb(85, 51, 79);
+background-color : rgb(254, 248, 245);
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>30</y>
+     <width>271</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+border:1px solid rgb(254, 248, 245);
+background-color: rgb(130, 87, 122);
+color: rgb(251, 230, 219);
+font: 28pt &quot;.AppleSystemUIFont&quot;;
+}
+QPushButton:pressed {
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 rgb(145, 100, 137), stop: 1 rgb(130, 87, 122));
+    
+}</string>
+   </property>
+   <property name="text">
+    <string>Graph!</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="sp_x_st">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+	font: 22pt &quot;.AppleSystemUIFont&quot;;
+  color: rgb(130, 87, 122);;
+
+}
+</string>
+   </property>
+   <property name="minimum">
+    <number>-1000000</number>
+   </property>
+   <property name="maximum">
+    <number>1000000</number>
+   </property>
+   <property name="value">
+    <number>-10</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="x_start">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+border:1px solid rgb(254, 248, 245);
+background-color: rgb(251, 230, 219);
+color: rgb(133, 84, 117);
+font: 22pt &quot;.AppleSystemUIFont&quot;;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>X Start</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="x_end">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+border:1px solid rgb(254, 248, 245);
+background-color: rgb(251, 230, 219);
+color: rgb(133, 84, 117);
+font: 22pt &quot;.AppleSystemUIFont&quot;;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>X End</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="sp_x_end">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>70</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+	font: 22pt &quot;.AppleSystemUIFont&quot;;
+  color: rgb(130, 87, 122);;
+
+}
+</string>
+   </property>
+   <property name="minimum">
+    <number>-1000000</number>
+   </property>
+   <property name="maximum">
+    <number>1000000</number>
+   </property>
+   <property name="value">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="sp_y_end">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>70</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+	font: 22pt &quot;.AppleSystemUIFont&quot;;
+  color: rgb(130, 87, 122);;
+
+}
+</string>
+   </property>
+   <property name="minimum">
+    <number>-1000000</number>
+   </property>
+   <property name="maximum">
+    <number>1000000</number>
+   </property>
+   <property name="value">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="sp_y_st">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>30</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+	font: 22pt &quot;.AppleSystemUIFont&quot;;
+  color: rgb(130, 87, 122);;
+
+}
+</string>
+   </property>
+   <property name="minimum">
+    <number>-1000000</number>
+   </property>
+   <property name="maximum">
+    <number>1000000</number>
+   </property>
+   <property name="value">
+    <number>-10</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="y_end">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>70</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+border:1px solid rgb(254, 248, 245);
+background-color: rgb(251, 230, 219);
+color: rgb(133, 84, 117);
+font: 22pt &quot;.AppleSystemUIFont&quot;;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Y End</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="y_start">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>30</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+border:1px solid rgb(254, 248, 245);
+background-color: rgb(251, 230, 219);
+color: rgb(133, 84, 117);
+font: 22pt &quot;.AppleSystemUIFont&quot;;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Y Start</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

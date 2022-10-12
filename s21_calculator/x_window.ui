@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>X_window</class>
+ <widget class="QDialog" name="X_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>407</width>
+    <height>140</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>411</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	font: 28pt &quot;.AppleSystemUIFont&quot;;
+  qproperty-alignment: 'AlignVCenter | AlignRight';
+  border: 1px solid rgb(254, 248, 245);
+color: rgb(85, 51, 79);
+background-color : rgb(254, 248, 245);
+
+}
+
+background-color : white;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="go_button">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>90</y>
+     <width>411</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+border:1px solid rgb(254, 248, 245);
+background-color: rgb(130, 87, 122);
+color: rgb(251, 230, 219);
+}
+QPushButton:pressed {
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 rgb(145, 100, 137), stop: 1 rgb(130, 87, 122));
+    
+}</string>
+   </property>
+   <property name="text">
+    <string>GO!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-3</x>
+     <y>-1</y>
+     <width>411</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font: 28pt &quot;.AppleSystemUIFont&quot;;
+  qproperty-alignment: 'AlignVCenter | AlignRight';
+  border: 1px solid rgb(254, 248, 245);
+color: rgb(85, 51, 79);
+background-color : rgb(252, 241, 236);
+
+}
+
+background-color : white;</string>
+   </property>
+   <property name="text">
+    <string>Enter x value:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
